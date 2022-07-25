@@ -7,22 +7,25 @@ Write a function named `addOne` that takes an array of numbers, done.
  and returns a new array of the numbers, Done.
   incremented by 1.
 
-Use `forEach` to loop over the input array and work with each value.
-Push the new value into a local array. Return the local array;
+Use `forEach` to loop over the input array and work with each value. Done.
+Push the new value into a local array. Done
+Return the local array;
 ------------------------------------------------------------------------------------------------ */
 
 const addOne = (arr) => {
-  console.log('problem one what is in the arr: ',arr);
-  // Solution code here...
-  // arr.forEach((arr)){
-  // }
+  // console.log('problem one what is in the arr: ',arr);
 
-  // return newArray;
+  let localArray = [];
+  arr.forEach( function(arrayElement) {
+    // console.log('inside the for each: ',arr);
+    localArray.push(arrayElement + 1);
+
+  });
+
+  return localArray;
 };
 
-for(let i = 0; i < addOne.length;i++){
-  newAddOne.push (array[i]+1);
-}
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
