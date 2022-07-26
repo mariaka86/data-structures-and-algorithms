@@ -29,13 +29,24 @@ const addOne = (arr) => {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function named `addExclamation` that takes an array of strings, and returns a new array of the same strings with an "!" added to the end.
+Write a function named `addExclamation` that takes an array of strings. Done
 
-Use `forEach` to loop over the input array. Modify each string, and add the updated value into a local array. Return the local array;
+returns a new array of the same strings with an "!" added to the end.
+
+Use `forEach` to loop over the input array.
+ Modify each string,
+ add the updated value into a local array.
+ Return the local array;
 ------------------------------------------------------------------------------------------------ */
 
 const addExclamation = (arr) => {
-  // Solution code here...
+  let localArray2 = [];
+  arr.forEach(function(inputArray){
+    console.log('inside for each array');
+    localArray2.push(inputArray + '!');
+
+  });
+  return localArray2;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -143,13 +154,13 @@ Run your tests from the console: jest challenges-01.test.js
 
 ------------------------------------------------------------------------------------------------ */
 
-describe('Testing challenge 1', () => {
+xdescribe('Testing challenge 1', () => {
   test('It should return an array with 1 added to each value of the original array', () => {
     expect(addOne([1, 2, 3, 4, 5])).toStrictEqual([2, 3, 4, 5, 6]);
   });
 });
 
-xdescribe('Testing challenge 2', () => {
+describe('Testing challenge 2', () => {
   test('It should return an array with an exclamation point added to each value of the original array', () => {
     expect(addExclamation(['hi', 'how', 'are', 'you'])).toStrictEqual(['hi!', 'how!', 'are!', 'you!']);
   });
