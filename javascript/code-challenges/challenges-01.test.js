@@ -74,19 +74,26 @@ const allUpperCase = (arr) => {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
-Write a function named `greeting` that takes in a single string and returns the string in all uppercase letters, and followed by an "!".
+Write a function named `greeting` that takes in a single string Done
+returns the string in all uppercase letters Done
+ followed by an "!". Done
 
-Then, write a function named `speaker` that takes in an array of strings and a callback function.
+Then, write a function named `speaker` that takes in an array of strings and a callback function.Done
 
-Use `forEach` to build a new array of strings, each string modified by the callback. Return the new array.
+Use `forEach` to build a new array of strings Done?
+ each string modified by the callback.?
+  Return the new array.
 ------------------------------------------------------------------------------------------------ */
 
-const greeting = (word) => {
-  // Solution code here...
-};
+const greeting = (word) => word.toUpperCase() + '!';
+
 
 const speaker = (words, callback) => {
-  // Solution code here...
+  let newWords=[];
+  words.forEach((word) => {
+    newWords.push(callback(word));
+  });
+  return newWords;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -106,11 +113,11 @@ Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
 const addValues = (arr, value) => {
-  // Solution code here...
+arr.push(value);
 };
 
 const addNumbers = (num, arr, times, callback) => {
-  // Solution code here...
+for(let i=0; i< times; i++)
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -150,7 +157,8 @@ Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
 const fizzbuzz = (arr) => {
-  // Solution code here...
+  let output = [];
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -176,7 +184,7 @@ xdescribe('Testing challenge 2', () => {
   });
 });
 
-describe('Testing challenge 3', () => {
+xdescribe('Testing challenge 3', () => {
   test('It should return an array of uppercase strings', () => {
     expect(allUpperCase(['hi', 'how', 'are', 'you'])).toStrictEqual(['HI', 'HOW', 'ARE', 'YOU']);
   });
