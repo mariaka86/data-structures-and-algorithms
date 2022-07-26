@@ -52,13 +52,23 @@ const addExclamation = (arr) => {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
-Write a function named `allUpperCase` that takes an array of strings, and returns a new array of the strings converted to upper case.
-
-Use `forEach` to loop over the input array. The modified strings should each be added into a local array. Return that local array.
+Write a function named `allUpperCase` that takes an array of strings Done
+ returns a new array of the strings converted to upper case.
+Use `forEach` to loop over the input array.
+ The modified strings should each be added into a local array.
+  Return that local array.
 ------------------------------------------------------------------------------------------------ */
 
 const allUpperCase = (arr) => {
-  // Solution code here...
+  let localArray3 = [];
+  arr. forEach (function(upperArray){
+    console.log ('in upper for each array');
+    localArray3.push(upperArray.toUpperCase());
+  });
+  return localArray3;
+
+
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -160,13 +170,13 @@ xdescribe('Testing challenge 1', () => {
   });
 });
 
-describe('Testing challenge 2', () => {
+xdescribe('Testing challenge 2', () => {
   test('It should return an array with an exclamation point added to each value of the original array', () => {
     expect(addExclamation(['hi', 'how', 'are', 'you'])).toStrictEqual(['hi!', 'how!', 'are!', 'you!']);
   });
 });
 
-xdescribe('Testing challenge 3', () => {
+describe('Testing challenge 3', () => {
   test('It should return an array of uppercase strings', () => {
     expect(allUpperCase(['hi', 'how', 'are', 'you'])).toStrictEqual(['HI', 'HOW', 'ARE', 'YOU']);
   });
