@@ -87,7 +87,7 @@ Use `forEach` to build a new array of strings Done?
 
 const greeting = (word) => word.toUpperCase() + '!';
 
-
+console.log ("is this even passing")
 const speaker = (words, callback) => {
   let newWords=[];
   words.forEach((word) => {
@@ -116,9 +116,9 @@ const addValues = (arr, value) => {
 arr.push(value);
 };
 
-const addNumbers = (num, arr, times, callback) => {
-for(let i=0; i< times; i++)
-};
+const addNumbers = (num, arr, times, callback) =>
+
+
 
 /* ------------------------------------------------------------------------------------------------
 
@@ -158,7 +158,7 @@ Return the resulting output array.
 
 const fizzbuzz = (arr) => {
   let output = [];
-  
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -190,7 +190,7 @@ xdescribe('Testing challenge 3', () => {
   });
 });
 
-xdescribe('Testing challenge 4', () => {
+describe('Testing challenge 4', () => {
   test('It should provide an array of strings, that get uppercased, and a "!" at the end', () => {
     expect(speaker(['hello', '301', 'students'], greeting)).toStrictEqual(['HELLO!', '301!', 'STUDENTS!']);
   });
