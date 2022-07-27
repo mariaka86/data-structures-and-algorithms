@@ -26,7 +26,12 @@ uses map to return a new array with each value simply incremented by 1.
 ------------------------------------------------------------------------------------------------ */
 
 const addOne = (arr) => {
-  // Solution code here...
+  let newArray = [];
+  newArray = arr.map (function (num){
+    return num + 1;
+  });
+
+  return newArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -205,13 +210,13 @@ Run your tests from the console: jest challenges-07.test.js
 
 ------------------------------------------------------------------------------------------------ */
 
-describe('Testing challenge 1', () => {
+xdescribe('Testing challenge 1', () => {
   test('It should return a new array of numbers raised to the thrid power', () => {
     expect(raisedToTheThird([2, 4, 5, -7, 0])).toStrictEqual([8, 64, 125, -343, 0]);
   });
 });
 
-xdescribe('Testing challenge 2', () => {
+describe('Testing challenge 2', () => {
   test('It should add one to all the numbers in the array', () => {
     expect(addOne([2, 3, 5, 11])).toStrictEqual([3, 4, 6, 12]);
   });
