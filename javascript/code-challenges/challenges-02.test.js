@@ -21,21 +21,30 @@ const raisedToTheThird = (arr) => {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function named addOne that, given an array of numbers, uses map to return a new array with each value simply incremented by 1.
+Write a function named addOne that, given an array of numbers Done
+uses map to return a new array with each value simply incremented by 1.
 ------------------------------------------------------------------------------------------------ */
 
 const addOne = (arr) => {
-  // Solution code here...
+  let newArray = [];
+  newArray = arr.map (function (num){
+    return num + 1;
+  });
+
+  return newArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
-Write a function named addQuestion that, given an array of strings, uses map to return a new array containing each string followed by a question mark character.
+Write a function named addQuestion that, given an array of strings,
+ uses map to return a new array containing
+ each string followed by a question mark character.
 ------------------------------------------------------------------------------------------------ */
 
 const addQuestion = (arr) => {
-  // Solution code here...
+  return arr.map((newArray2)=> newArray2 + '?') ;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -204,7 +213,7 @@ Run your tests from the console: jest challenges-07.test.js
 
 ------------------------------------------------------------------------------------------------ */
 
-describe('Testing challenge 1', () => {
+xdescribe('Testing challenge 1', () => {
   test('It should return a new array of numbers raised to the thrid power', () => {
     expect(raisedToTheThird([2, 4, 5, -7, 0])).toStrictEqual([8, 64, 125, -343, 0]);
   });
@@ -216,7 +225,7 @@ xdescribe('Testing challenge 2', () => {
   });
 });
 
-xdescribe('Testing challenge 3', () => {
+describe('Testing challenge 3', () => {
   test('It should add a question mark to the end of each string', () => {
     expect(addQuestion(['hello', '301', 'students'])).toStrictEqual(['hello?', '301?', 'students?']);
   });
