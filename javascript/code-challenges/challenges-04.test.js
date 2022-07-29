@@ -33,18 +33,8 @@ Write a function called sortNames that takes an array of names and sorts them al
 For example: 'Cat' would come before 'apple'
 ------------------------------------------------------------------------------------------------ */
 
-const sortNames = (arr) => {
-  //console. log ('sortNames',arr);
-  sortNames.sort ((left, right)=> {
-    if (left.toLowerCase() < right.toLowerCase()){
-      return 100;
-    }else if (left.toLowerCase()> right.toLowerCase()){
-      return -100;
-    }else{
-    // must be equal
-      return 0;
-    }
-  });
+const sortNames = (arr) => {( arr.sort()
+);
 };
 
 
@@ -243,13 +233,13 @@ xdescribe('Testing challenge 1', () => {
   });
 });
 
-xdescribe('Testing challenge 2', () => {
+describe('Testing challenge 2', () => {
   test('It should return an array of names sorted alphabetically', () => {
     expect(sortNames(['able', 'Bob'])[0]).toStrictEqual('Bob');
   });
 });
 
-describe('Testing challenge 3', () => {
+xdescribe('Testing challenge 3', () => {
   test('It should sort low-to-high the numbers in an array', () => {
     expect(sortNumbers([8, 3, 2, 9, 12, 1, 115])).toStrictEqual([1, 2, 3, 8, 9, 12, 115]);
   });
