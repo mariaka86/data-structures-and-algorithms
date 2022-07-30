@@ -3,6 +3,7 @@
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1
 
+ for-each
 Write a function named `addOne` that takes an array of numbers,
 and returns a new array of the numbers, incremented by 1.
 
@@ -32,11 +33,11 @@ const addExclamation = (arr) => {
     newArray2.push(arrayElement+'!');
   });
   return newArray2;
-};
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
-
+< for-each
 Write a function named `allUpperCase` that takes an array of strings, and returns a new array of the strings converted to upper case.
 
 Use `forEach` to loop over the input array. The modified strings should each be added into a local array. Return that local array.
@@ -48,7 +49,7 @@ const allUpperCase = (arr) => {
     newArray3.push(arrayElement.toUpperCase());
   });
   return newArray3;
-};
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -61,6 +62,7 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = (word) => {
+ 
   return word.toUpperCase()+'!';
 };
 
@@ -70,7 +72,7 @@ const speaker = (words, callback) => {
     newArray4.push (callback(arrayElement));
   });
   return newArray4;
-};
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -147,13 +149,17 @@ Run your tests from the console: jest challenges-01.test.js
 
 ------------------------------------------------------------------------------------------------ */
 
-describe('Testing challenge 1', () => {
+
+xdescribe('Testing challenge 1', () => {
+
   test('It should return an array with 1 added to each value of the original array', () => {
     expect(addOne([1, 2, 3, 4, 5])).toStrictEqual([2, 3, 4, 5, 6]);
   });
 });
 
-describe('Testing challenge 2', () => {
+
+xdescribe('Testing challenge 2', () => {
+
   test('It should return an array with an exclamation point added to each value of the original array', () => {
     expect(addExclamation(['hi', 'how', 'are', 'you'])).toStrictEqual(['hi!', 'how!', 'are!', 'you!']);
   });
@@ -165,20 +171,26 @@ describe('Testing challenge 3', () => {
   });
 });
 
-describe('Testing challenge 4', () => {
+
+xdescribe('Testing challenge 4', () => {
+
   test('It should provide an array of strings, that get uppercased, and a "!" at the end', () => {
     expect(speaker(['hello', '301', 'students'], greeting)).toStrictEqual(['HELLO!', '301!', 'STUDENTS!']);
   });
 });
 
-describe('Testing challenge 5', () => {
+
+xdescribe('Testing challenge 5', () => {
+
   test('It should add the number 8 to the array five times', () => {
     expect(addNumbers(8, [], 5, addValues)).toStrictEqual([8, 8, 8, 8, 8]);
     expect(addNumbers(8, [], 5, addValues).length).toStrictEqual(5);
   });
 });
 
-describe('Testing challenge 6', () => {
+
+xdescribe('Testing challenge 6', () => {
+
   const inventory = [{ name: 'apples', available: true }, { name: 'pears', available: true }, { name: 'oranges', available: false }, { name: 'bananas', available: true }, { name: 'blueberries', available: false }];
 
   test('It should only add the available items to the list', () => {
