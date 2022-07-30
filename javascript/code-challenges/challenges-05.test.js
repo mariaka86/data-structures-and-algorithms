@@ -24,10 +24,8 @@ Write a function named addValues that,
 
 ------------------------------------------------------------------------------------------------ */
 
-const addValues = (arr) =>{
-  console.log(arr);
-  arr. reduce ( (prevVal, currVal)=> prevVal + currVal,0);
-};
+const addValues = (arr) => arr.reduce ((prevVal, currVal)=> prevVal + currVal,0);
+
 
 
 
