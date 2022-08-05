@@ -32,12 +32,14 @@ const getCourseKeys = (obj) => {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
-Write a function named checkValues that takes in an object and a value and returns true if the value is in the object.
+Write a function named checkValues that takes in an object and a value DONE
+ returns true if the value is in the object.
 
 
 ------------------------------------------------------------------------------------------------ */
 
 const checkValues = (obj, value) => {
+if obj (Object.value(obj).indexOf)
 
 };
 
