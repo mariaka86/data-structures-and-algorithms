@@ -9,13 +9,12 @@ Write a function called addTwo that takes in an array and adds two to every valu
 ------------------------------------------------------------------------------------------------ */
 
 const addTwo = (arr) => {
-  let newArray= [];
-  for (let i = 0; i < arr.length; i++){
-    newArray.push = (arr[i]+2);
+  let newArray = [];
+  for (let i = 0; i < arr.length; i++) {
+    newArray.push(arr[i]+2);
   }
   return newArray;
 };
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
@@ -38,7 +37,7 @@ uses filter to return an array containing only strings that contain 'and' within
 For example, containsAnd(['panda', 'ran', 'and']) returns ['panda', 'and'].
 ------------------------------------------------------------------------------------------------ */
 
-const containsAnd = (arr) => arr.filter( index => typeof index.includes('and'));
+const containsAnd = (arr) => arr.filter( value => value.includes('and'));
 
 
 
