@@ -1,23 +1,91 @@
 # Data Structures and Algorithms
 
-See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-code-challenges), in the Code 301 Setup Guide.
+## 401 Code Challenge 1
 
-## Repository Quick Tour and Usage
 
-### 301 Code Challenges
+*Problem domain*
 
-Under the `javascript` folder, at the top level, is a sub-folder called `code-challenges`
+writing a function called reverseArray that intakes an array as an argument. Return that array with the elements in reversed order without using any of the built-in methods in your language.
 
-Each day, you'll add one new file to this folder to do your work for the day's assigned code challenge
+input: array
+output: reverse array
 
-If you have not already done so, run `npm install` from within this folder to setup your system to be able to run tests using `Jest`
+Test Cases (what could go wrong)
+-empty array
+-contents of array matter? , data type? , array of other data structures?
 
-To run your tests
+*Visualization*
 
-- Change to the `javascript` folder
-- run `npm test` to run all of the tests
-- run `npm test ##` to only run tests for challenge ## (i.e. 01)
+[1, 2, 3, 4, 5] to [5, 4, 3, 2, 1]
 
-### 401 Data Structures, Code Challenges
+step 1. create a pointer on numbers 1 and 5 that allows you to switch them
+step 2. repeat with 2 and 4 leave 3 alone
+resulting in [5, 4, 3, 2, 1]
 
-- Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
+*Algorithm*
+- declare reverseArray function that taes andarray as parameter
+- create front variable and assign the first index of the array
+-create end varibale and dynaically assign the last index of the array
+
+- while end index is greater than the front index
+	-create a temporary variable and assign the front value
+	-assign end to front
+	-assign temp to end
+        -incrment front variable
+        -decrement end variable
+
+output the modified array
+
+### PseudoCode:
+reverseArray <- function
+arr <- input 
+
+front <- indox 0 of array
+end <- array length minus 1
+
+
+while end is greater than front 
+	temp <- front
+	front <- end
+	end <- temporary
+	increment front 
+	decrement end 
+
+return array
+
+
+### Code:
+ function reverseArr(arr){
+let front=0
+let end = arr.length-1;
+
+while (end > front) {
+let temp = arr[front];
+arr[front]=arr[end];
+arr[end]=temp;
+front++;
+end--;
+	}
+return arr;
+}
+
+
+### Common things to test:
+ off by errors
+data type confirmation
+all of out test casses/ what ifs
+does it work large scale
+
+Front:0, 1 , 2, 2
+
+_____________________________
+
+
+End:4 , 3 , 2
+________________________________
+
+Result[5,2,3,4,1], [5,4,3,2,1]
+
+
+
+
