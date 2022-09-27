@@ -1,11 +1,9 @@
 'use strict';
-
 class Node {
   constructor(value){
     this.value = value;
     this.next = null;
 
-  }
 }
 class LinkedList{
   constructor(){
@@ -31,11 +29,12 @@ class LinkedList{
     current.next = node
 
   }
+
   // always transverse from the head
   traverse(){
     let current = this.head;
     while (current){
-    // when transeversing you'll have to console.log/"do the thing"
+    // when transversing you'll have to console.log/"do the thing"
       console.log(current.value)
       current = current.next
     }
