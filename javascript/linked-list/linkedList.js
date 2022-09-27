@@ -22,7 +22,7 @@ class LinkedList{
       return;
     }
     // transversing the linked list and adding our new node to the end
-    let current = this. head;
+    let current = this.head;
     // choosing current.next, while null will reassign the new node
     while(current.next){
       current = current.next
