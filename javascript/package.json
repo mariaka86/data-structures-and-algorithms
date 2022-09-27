@@ -4,9 +4,8 @@
   "description": "Data Structures, Algorithms, Code Challenges",
   "main": "index.js",
   "scripts": {
-    "get-challenge": "`which bash` ./code-challenges/bin/get-challenge.sh",
     "test": "jest --verbose --coverage",
-    "lint": "eslint '**/*.js'"
+    "test-watch": "jest --watchAll --verbose --coverage"
   },
   "author": "",
   "license": "MIT",
@@ -18,5 +17,6 @@
     "mustache": "^4.2.0",
     "react-bootstrap": "^2.4.0",
     "supertest": "^6.1.3"
-  }
+  },
+  "keywords": []
 }
