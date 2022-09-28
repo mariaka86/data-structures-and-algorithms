@@ -83,3 +83,15 @@ From the `data-structures-and-algorithms/javascript` folder, execute the followi
 #### Live Tests
 
 Note that when you check your code into GitHub, all of your tests will automatically execute. These results should match your own, and will be found on the  **Actions** tab
+
+
+## Coding Challenge Index
+[Coding Challenge -01 Assignment](REVERSEREADME.md)
+[Coding Challenge -02 Assignment](SHIFTREADME.md)
+[Coding Challenge -03 Assignment](SEARCHREADME.md)
+
+Coding Challenge 04 Mock Interview
+[Coding Challenge 05-7 Assignment](LLISTREADME.md)
+
+
+ [Coding Challenge -08 Assignment](ZIPREADME.md)
