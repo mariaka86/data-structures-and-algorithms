@@ -87,11 +87,13 @@ Note that when you check your code into GitHub, all of your tests will automatic
 
 ## Coding Challenge Index
 [Coding Challenge -01 Assignment](401-code-challenges/array-reverse/README.md)
+
 [Coding Challenge -02 Assignment](401-code-challenges/array-insert-shift/README.md)
+
 [Coding Challenge -03 Assignment](401-code-challenges/array-binary-search/README.md)
 
 Coding Challenge 04 Mock Interview
-[Coding Challenge 05-7 Assignment](linked-list/README.md)
 
+[Coding Challenge 05-7 Assignment](linked-list/README.md)
 
  [Coding Challenge -08 Assignment](401-code-challenges/linked-list-zip/README.md)
