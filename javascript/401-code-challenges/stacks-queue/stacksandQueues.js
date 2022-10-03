@@ -52,6 +52,8 @@ class Queue{
 
   enqueue(){
   // add a new node to the back of the queue
+  if (this.next=== null){
+    this.newNode.push(this.next.pop());
 
   }
 
