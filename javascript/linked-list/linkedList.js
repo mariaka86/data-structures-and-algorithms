@@ -38,7 +38,7 @@ class LinkedList{
       console.log(current.value)
       current = current.next
     }
-
+/home/c6/projects/courses/code401/data-structures-and-algorithms/javascript/linked-list/__tests__
   }
 
 }
