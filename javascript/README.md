@@ -96,4 +96,8 @@ Coding Challenge 04 Mock Interview
 
 [Coding Challenge 05-7 Assignment](linked-list/README.md)
 
- [Coding Challenge -08 Assignment](401-code-challenges/linked-list-zip/README.md)
+[Coding Challenge -08 Assignment](401-code-challenges/linked-list-zip/README.md)
+
+[Coding Challenge -09 Assignment](401-code-challenges/stacks-queue/stacksandQueues.js)
+
+[Coding Challenge -10 Assignment](401-code-challenges/stacks-queue/README.md)
