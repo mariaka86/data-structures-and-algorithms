@@ -1,4 +1,4 @@
-Code:
+
 
 function validateBrackets(string) {
 
