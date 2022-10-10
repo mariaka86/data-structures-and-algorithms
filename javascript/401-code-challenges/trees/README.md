@@ -9,7 +9,19 @@
 This code challenge is to create a method to find the max value in a binary tree.
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+## 14
+
+![Binary-Search-Tree](https://user-images.githubusercontent.com/93843463/194964235-3677ee5a-a693-45fa-a9d3-fe4bb4b5f1dc.png)
+
+
+![Binary-Tree](https://user-images.githubusercontent.com/93843463/194964246-89ffaeb0-5f65-40e2-ba96-2597808624fc.png)
+
+## 15
+
+
+
+![binary-tree2](https://user-images.githubusercontent.com/93843463/194964454-26b45a91-65d3-439c-a9b2-1893257b3f14.png)
+
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
