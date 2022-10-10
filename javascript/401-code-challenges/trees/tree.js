@@ -28,7 +28,11 @@ class BinaryTree {
       }
       traverse(this.root)
 
+    };
+    findMax() {
+      return this.doFindMax(this.root);
     }
+   
 
   }
   postOrder(){
@@ -39,9 +43,9 @@ class BinaryTree {
       console.log(node.value);
     }
     traverse(this.root);
-    }
+    };
   }
-};
+}
 
 let tree= new BinaryTree();
 tree.root = new Node(10);

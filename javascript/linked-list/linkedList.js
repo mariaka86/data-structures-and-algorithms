@@ -4,8 +4,8 @@ class Node {
     this.value = value;
     this.next = null;
 
-}
-class Linkedlist{
+
+class LinkedList{
   constructor(){
     this.head = null;
   }
@@ -38,7 +38,6 @@ class Linkedlist{
       console.log(current.value)
       current = current.next
     }
-/home/c6/projects/courses/code401/data-structures-and-algorithms/javascript/linked-list/__tests__
   }
 
 }
