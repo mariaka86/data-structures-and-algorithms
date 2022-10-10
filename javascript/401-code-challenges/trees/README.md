@@ -30,12 +30,15 @@ O(n) time
 
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
+
   findMax() {
     return this.doFindMax(this.root);
+    
   }
   doFindMax(node) {
     if (!node) {
       return;
+      
     }
     let value = node.value;
     let leftValue = this.doFindMax(node.left);
