@@ -1,31 +1,32 @@
-function Mergesort(arr)
-let n = arr.length{
-  if (n < 1){
-  mid = n / 2
+function Mergesort(arr, compare){
+
+// default sort is small to large
+compare = compare ? compare : (a, b) => a < b;
+  if (arr.length < 1)return arr
+  let mid = Math.floor (arr.length/2);
+  //cutting list in half
   let left = arr[0, mid]
-  let right = arr[mid, n]
-  return merge(Mergesort(left), MergeSort(arr)
-    (Mergesort(right), MergeSort(arr)
-    ))
-  }
+  let right = arr[mid, arr.length]
+  return Merge(Mergesort(left,compare)
+    (Mergesort(right,compare), compare)
+}
+function Merge(left, right, compare)
+let result=[];
+while ( left.length || right.length){
+if (!left.length){
+  result.push(right.shift())
+  continue;
+}
+if (!right.length){
+  result.push(left.shift());
+  continue;
+}
+if (compare(left[0],right[0])){
+  result.push(left.shift());
+} else {
+  result.push(right.shift());
 }
 
-Mergesort([8, 3, 5, 4, 7, 6, 1, 2])
-
-function Merge(left, right, arr)
-let i = 0
-let j = 0
-let k = 0
-while i < left.length && j < right.length
-if (left[i] <= right[j]
-arr[k] = left[i]
-i = i + 1) {
-}else {
-  arr[k] = right[j]
-  j = j + 1
-  k = k + 1
+return result.concat(left).concat(right);
 }
-if i = left.length
-left.length = right
-else
-  left.length = left
+module.exports  = mergeSort;
