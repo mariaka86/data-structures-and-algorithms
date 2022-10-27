@@ -1,6 +1,6 @@
 
 'use strict';
-const{yearComparator, titleComparator}= require('./comparater');
+const movies = require('./movies');
 // write your own comparator function for each function and export THOSE separately for testing as well. You will also use comparators in the three pre-written functions bellow
 
 // examples for demo
@@ -34,6 +34,30 @@ const standings = [
 // what is a comparator?
 // function that determines sort definitions
 
+let yearComparator = (a, b) => {
+  const yearA = a.year;
+  const yearB = b.year;
+
+  if (yearA < yearB) {
+    return -1;
+  }
+  if (yearB > yearA) {
+    return 1;
+  }
+
+  // if years are equal
+  return 0;
+};
+
+function titleComparator(a, b){
+  let titleA = a.title.replace('The ', '');
+  let titleB = b.title.replace('The ', '');
+
+  if(titleA < titleB) return -1;
+  if(titleB > titleB) return 1;
+
+  return 0;
+}
 
 
 // Complete for Code Challenge 28
