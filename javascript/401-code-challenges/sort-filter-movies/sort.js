@@ -1,27 +1,11 @@
 
 'use strict';
-
-const movies = require('./movies');
-
+const{yearComparator, titleComparator}= require('./comparater');
 // write your own comparator function for each function and export THOSE separately for testing as well. You will also use comparators in the three pre-written functions bellow
 
 // examples for demo
 const books = ['A Tale of Two Cities', 'Mary Poppins', 'Lord of the Rings'];
 
-// sample:
-let sampleCOmparator = (a, b) => {
-  const nameA = a.name.toUpperCase(); // ignore upper and lowercase
-  const nameB = b.name.toUpperCase(); // ignore upper and lowercase
-  if (nameA < nameB) {
-    return -1;
-  }
-  if (nameA > nameB) {
-    return 1;
-  }
-
-  // names must be equal
-  return 0;
-}
 
 // comparator for books:
 function bookComparator(a, b){
@@ -54,15 +38,15 @@ const standings = [
 
 // Complete for Code Challenge 28
 function sortYear(movies) {
-  return [];
+  return movies.sort(yearComparator);
 }
 
 function sortTitle(movies) {
-  return [];
+  return movies.sort(titleComparator);
 }
 
 function inGenre(movies, genre) {
-  return [];
+  return movies.filter(movie => movie.genres.includes(genre));
 }
 
-module.exports = { sortYear, sortTitle, inGenre }
+module.exports = { sortYear, sortTitle, inGenre };
