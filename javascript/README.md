@@ -109,3 +109,7 @@ Coding Challenge 04 Mock Interview
 [Coding Challenge -26 Assignment](401-code-challenges/array-insert-sort/README.md)
 
 [Coding Challenge -27 Assignment](401-code-challenges/sort-filter-movies/README.md)
+
+Code Challenge -28  (interview)
+
+[Coding Challenge -29 Assignment](401-code-challenges/hash/README.md)
