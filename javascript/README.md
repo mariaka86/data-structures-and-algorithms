@@ -80,9 +80,13 @@ From the `data-structures-and-algorithms/javascript` folder, execute the followi
 - **Run a test for a data structure** - `npm test linked-list`
 - **Run a test for a specific challenge** - `npm test reverse-ll`
 
-#### Live Tests
+### Live Tests
 
 Note that when you check your code into GitHub, all of your tests will automatically execute. These results should match your own, and will be found on the  **Actions** tab
+
+#### References
+
+<https://github.com/codefellows/seattle-code-javascript-401d48>
 
 ## Coding Challenge Index
 
@@ -117,3 +121,5 @@ Code Challenge -28  (interview)
 [Coding Challenge - 30 Assignment](401-code-challenges/treeIntersection/README.md)
 
 [Coding Challenge -31 Assignment](401-code-challenges/hash/README.md)
+
+[Coding Challenge -32 Assignment](401-code-challenges/graphs/README.md)
