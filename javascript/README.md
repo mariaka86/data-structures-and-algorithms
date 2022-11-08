@@ -122,4 +122,4 @@ Code Challenge -28  (interview)
 
 [Coding Challenge -31 Assignment](401-code-challenges/hash/README.md)
 
-[Coding Challenge -32 Assignment](401-code-challenges/graphs/README.md)
+[Coding Challenge -32/33 Assignment](401-code-challenges/graphs/README.md)
