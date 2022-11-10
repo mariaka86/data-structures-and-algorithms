@@ -9,7 +9,7 @@ breadthFirst(root, callback){
   while(queue.length){
     current = queue.pop();
 
-    // we do something with our callback IF WE NEED
+
     if(callback) callback(current.value);
 
     // grab neighbors if they exist
@@ -21,6 +21,6 @@ breadthFirst(root, callback){
       }
     }
   }
-  // what do we need to return?  choosing to return entire set, use as you will
+
   return visited;
 }
